@@ -1,0 +1,238 @@
+/* =====================================
+   My Portfolio Stylesheet
+   Author: Mykhaela Rollins
+   ===================================== */
+
+/* ===== Root Variables ===== */
+:root {
+  --accent: #ffb6c1; /* baby pink */
+  --text-dark: #333;
+  --bg: #fff8fa;
+  --card-bg: #ffffff;
+  --font-main: "Inter", "Segoe UI", sans-serif;
+  --font-header: "Playfair Display", serif;
+}
+
+/* ===== Base Styles ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+  text-align: center;
+  background-color: #ffeef2;
+  color: var(--text-dark);
+  padding: 20px 0;
+  border-bottom: 3px dotted var(--accent);
+}
+
+h1 {
+  font-family: var(--font-header);
+  font-size: 2.5em;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 8px;
+}
+
+nav a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* ===== Main Content ===== */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ===== Section Styling ===== */
+section {
+  background-color: var(--card-bg);
+  border: 2px dotted var(--accent);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(255, 182, 193, 0.25);
+}
+
+section h2,
+section h3 {
+  font-family: var(--font-header);
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+section h2 {
+  font-size: 1.8em;
+  border-bottom: 1px dotted var(--accent);
+  padding-bottom: 5px;
+}
+
+section h3 {
+  font-size: 1.3em;
+  margin-top: 20px;
+}
+
+/* ===== Typography ===== */
+p {
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* ===== Images ===== */
+img {
+  display: block;
+  margin: 10px auto 20px;
+  border-radius: 10px;
+  border: 2px solid var(--accent);
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.25);
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== Buttons ===== */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #e8aaba;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #ffaecb;
+}
+
+.button:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px #d88ea9;
+}
+
+/* ===== Forms ===== */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ffd6e3;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+/* ===== Tablet Styles ===== */
+@media (max-width: 900px) {
+  main {
+    max-width: 90%;
+    padding: 0 15px;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  nav a {
+    margin: 0 6px;
+    font-size: 0.95em;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  section h2 {
+    font-size: 1.6em;
+  }
+}
+
+
+/* ===== Footer ===== */
+footer {
+  background-color: #ffeef2;
+  color: var(--text-dark);
+  text-align: center;
+  padding: 12px 0;
+  border-top: 2px dotted var(--accent);
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 4px 6px;
+  }
+}
